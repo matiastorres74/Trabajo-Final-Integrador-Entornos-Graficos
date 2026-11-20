@@ -11,9 +11,6 @@ Web app responsive para gestionar los descuentos y promociones de los locales de
 
 - María Victoria Gasparetti
 - Matías Torres
-- Constanza Dominio
-- Tomás Agusti
-- Nicolás Fossati
 
 Profesores: Diaz, D. y Butti, J.
 
