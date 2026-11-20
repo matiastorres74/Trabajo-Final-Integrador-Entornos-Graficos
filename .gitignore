@@ -1,0 +1,22 @@
+# Credenciales y configuración local
+.env
+
+# Archivos generados en tiempo de ejecución (logs y emails de desarrollo)
+storage/*
+!storage/.htaccess
+
+# Dependencias y archivos temporales
+vendor/
+node_modules/
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Archivos de herramientas de diseño (no son parte del sistema)
+.21st/
+.taste-skill/
+.impeccable/
+.playwright-mcp/

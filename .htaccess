@@ -1,0 +1,21 @@
+# Configuración para Apache (XAMPP y la mayoría de los hostings compartidos).
+
+Options -Indexes
+DirectoryIndex index.php
+AddDefaultCharset UTF-8
+AddType image/avif .avif
+
+# Páginas de error propias en español.
+ErrorDocument 404 /404.php
+ErrorDocument 403 /404.php
+
+# Nunca servir archivos de configuración, SQL ni documentación interna.
+<FilesMatch "(^\.|\.(sql|md|log|ini|example)$)">
+    Require all denied
+</FilesMatch>
+
+# Forzar HTTPS en producción (descomentar en el hosting si no lo hace el panel).
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
